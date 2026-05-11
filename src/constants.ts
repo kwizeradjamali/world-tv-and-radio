@@ -1,0 +1,27 @@
+import { Country } from './types';
+
+export const INITIAL_COUNTRIES: Country[] = [
+  { name: 'Rwanda', isoCode: 'RW', flag: '🇷🇼', lat: -1.9403, lng: 29.8739 },
+  { name: 'USA', isoCode: 'US', flag: '🇺🇸', lat: 37.0902, lng: -95.7129 },
+  { name: 'UK / England', isoCode: 'GB', flag: '🇬🇧', lat: 55.3781, lng: -3.4360 },
+  { name: 'France', isoCode: 'FR', flag: '🇫🇷', lat: 46.2276, lng: 2.2137 },
+  { name: 'Japan', isoCode: 'JP', flag: '🇯🇵', lat: 36.2048, lng: 138.2529 },
+  { name: 'Brazil', isoCode: 'BR', flag: '🇧🇷', lat: -14.2350, lng: -51.9253 },
+  { name: 'Australia', isoCode: 'AU', flag: '🇦🇺', lat: -25.2744, lng: 133.7751 },
+  { name: 'Germany', isoCode: 'DE', flag: '🇩🇪', lat: 51.1657, lng: 10.4515 },
+  { name: 'India', isoCode: 'IN', flag: '🇮🇳', lat: 20.5937, lng: 78.9629 },
+  { name: 'South Africa', isoCode: 'ZA', flag: '🇿🇦', lat: -30.5595, lng: 22.9375 },
+  { name: 'Canada', isoCode: 'CA', flag: '🇨🇦', lat: 56.1304, lng: -106.3468 },
+  { name: 'Italy', isoCode: 'IT', flag: '🇮🇹', lat: 41.8719, lng: 12.5674 },
+  { name: 'China', isoCode: 'CN', flag: '🇨🇳', lat: 35.8617, lng: 104.1954 },
+  { name: 'Russia', isoCode: 'RU', flag: '🇷🇺', lat: 61.5240, lng: 105.3188 },
+  { name: 'Mexico', isoCode: 'MX', flag: '🇲🇽', lat: 23.6345, lng: -102.5528 },
+  { name: 'Kenya', isoCode: 'KE', flag: '🇰🇪', lat: -0.0236, lng: 37.9062 },
+  { name: 'Spain', isoCode: 'ES', flag: '🇪🇸', lat: 40.4637, lng: -3.7492 },
+  { name: 'Argentina', isoCode: 'AR', flag: '🇦🇷', lat: -38.4161, lng: -63.6167 },
+  { name: 'Turkey', isoCode: 'TR', flag: '🇹🇷', lat: 38.9637, lng: 35.2433 },
+  { name: 'South Korea', isoCode: 'KR', flag: '🇰🇷', lat: 35.9078, lng: 127.7669 },
+  { name: 'Egypt', isoCode: 'EG', flag: '🇪🇬', lat: 26.8206, lng: 30.8025 },
+  { name: 'Thailand', isoCode: 'TH', flag: '🇹🇭', lat: 15.8700, lng: 100.9925 },
+  { name: 'Netherlands', isoCode: 'NL', flag: '🇳🇱', lat: 52.1326, lng: 5.2913 },
+];

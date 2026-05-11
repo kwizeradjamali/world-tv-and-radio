@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-neon-cyan: #00f3ff;
+  --color-neon-purple: #9d00ff;
+  --color-neon-blue: #0066ff;
+  
+  --animate-neon-pulse: neon-pulse 2s ease-in-out infinite;
+}
+
+@keyframes neon-pulse {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 5px var(--color-neon-cyan)); }
+  50% { opacity: 0.7; filter: drop-shadow(0 0 15px var(--color-neon-cyan)); }
+}
+
+body {
+  @apply bg-black text-white selection:bg-neon-cyan/30;
+  background-image: radial-gradient(circle at 50% -20%, #1e1b4b 0%, #000 70%);
+  min-height: 100vh;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+@layer components {
+  .btn-neon {
+    @apply relative px-6 py-2 rounded-full font-medium transition-all duration-300
+           bg-white/5 hover:bg-white/10 border border-white/10
+           hover:border-neon-cyan/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.2)];
+  }
+}
+

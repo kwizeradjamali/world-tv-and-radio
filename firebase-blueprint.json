@@ -1,0 +1,61 @@
+{
+  "entities": {
+    "Country": {
+      "title": "Country",
+      "description": "A country in the world",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "isoCode": { "type": "string" },
+        "flag": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" }
+      },
+      "required": ["name", "isoCode", "lat", "lng"]
+    },
+    "Station": {
+      "title": "Station",
+      "description": "A radio or TV station",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "type": "string", "enum": ["radio", "tv"] },
+        "streamUrl": { "type": "string" },
+        "logo": { "type": "string" },
+        "genre": { "type": "string" },
+        "countryId": { "type": "string" },
+        "active": { "type": "boolean" },
+        "bitrate": { "type": "string" },
+        "quality": { "type": "string" }
+      },
+      "required": ["name", "type", "streamUrl", "countryId"]
+    },
+    "User": {
+      "title": "User",
+      "description": "Application user profile",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "favorites": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["uid", "email"]
+    }
+  },
+  "firestore": {
+    "countries": {
+      "schema": "Country",
+      "description": "Collection of countries"
+    },
+    "stations": {
+      "schema": "Station",
+      "description": "Collection of radio and TV stations"
+    },
+    "users": {
+      "schema": "User",
+      "description": "Collection of user profiles"
+    }
+  }
+}
